@@ -16,10 +16,10 @@ app.use(cors());
 const db = knex({
   client: "pg",
   connection: {
-    host: process.env.DATABASE_HOST,
-    user: process.env.DATABASE_USER,
-    password: process.env.DATABASE_PW,
-    database: process.env.DATABASE_DB,
+    host: "dpg-cjqa1f61208c739qdra0-a",
+    user: "smart_brainsdb_user",
+    password: "mTGz52WvvGRk6UarvEtmISCekDK8zx5s",
+    database: "smart_brainsdb",
   },
 });
 

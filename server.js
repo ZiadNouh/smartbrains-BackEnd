@@ -25,9 +25,9 @@ const db = knex({
 
 console.log(db.select("*").from("users"));
 
-// app.get("/", (req, res) => {
-//   res.send("success");
-// });
+app.get("/", (req, res) => {
+  res.send("success");
+});
 
 app.post("/signin", (req, res) => {
   signin.handleSignin(req, res, db, bcrypt);
